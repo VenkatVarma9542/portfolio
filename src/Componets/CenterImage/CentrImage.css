@@ -1,0 +1,16 @@
+.circle {
+  width: 26rem; /* Set the width of the circle */
+  height: 26rem; /* Set the height of the circle */
+  border-radius: 50%; /* Make it a circle by setting border-radius to 50% */
+  overflow: hidden; /* Hide overflow content */
+  position: relative; /* Position relative for absolute positioning of image */
+  background-color: #341e63; /* Set the background color */
+}
+.circle-image {
+  width: 100%; /* Make the image fill the circle */
+  height: 100%; /* Make the image fill the circle */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  position: absolute; /* Position absolute to fill the circle */
+  top: -30px;
+  left: -23px;
+}

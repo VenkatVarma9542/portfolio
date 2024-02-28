@@ -1,0 +1,25 @@
+.Pointer {
+  animation-name: Pointer-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes Pointer-animation {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* For demonstration purposes only: */
+body {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 0.5em;
+}

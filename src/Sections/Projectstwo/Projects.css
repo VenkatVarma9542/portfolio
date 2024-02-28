@@ -1,0 +1,117 @@
+.ps_container {
+  background-color: #f5f5f5;
+  box-shadow: 0 30px 50px #dbdbdb;
+  margin: 15rem 10rem 1rem 10rem;
+  border-radius: 4rem;
+  overflow-x: hidden;
+}
+.ps_main_container {
+  position: relative;
+  overflow-x: hidden;
+}
+.ps_bg_container {
+  height: 100vh;
+  border-radius: 4rem;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: animate 1s forwards;
+}
+.ps_continer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4rem 5rem;
+}
+.ps_continer2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.ps_title-cont {
+  margin-left: 4rem;
+}
+.pc_heading {
+  font-size: 5rem;
+  color: #9c64f7;
+  text-shadow: 0 2rem 4rem #3d3c3c;
+}
+.pc_desc {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  text-shadow: 0 2rem 4rem #dbdbdb;
+}
+.pc_img_cont {
+  position: absolute;
+  right: 4rem;
+}
+.pc_img {
+  height: 30rem;
+  width: 20rem;
+  border-radius: 1rem;
+  size: cover;
+  position: absolute;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  transform: translateX(-200%); /* Translate each image by -70% to overlap */
+  box-shadow: 0 30px 50px #000000;
+  cursor: pointer;
+  transition: transform 10s ease; /* Add transition for smooth effect */
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.pc_img:hover {
+  translate: 15% -10%;
+  transition-duration: 10s;
+}
+.pc_nav {
+  cursor: pointer;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem #000000;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+}
+/* zoom effect */
+/* CSS */
+
+@keyframes zoomOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Add the provided keyframes */
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translate(0, 100px);
+    filter: blur(33px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+    filter: blur(0);
+  }
+}
+/* CSS */
+.ps_bg_container.zoom-in {
+  transition: background-size 1s ease; /* Add transition for smooth zoom effect */
+}

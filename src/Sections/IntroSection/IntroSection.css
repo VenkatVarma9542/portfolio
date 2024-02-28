@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Imagesection {
+  margin-top: auto; /* Push the Platforms section to the bottom */
+}
+
+span {
+  color: rgb(86, 6, 160);
+  font-size: 1.4;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2rem;
+  color: rgb(167, 163, 167);
+}
+
+.bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15rem 12rem 3rem 12rem;
+}
+
+.Imagesection {
+  margin-bottom: 20px; /* Add margin at the bottom */
+}

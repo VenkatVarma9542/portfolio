@@ -1,0 +1,28 @@
+ss.word-animation {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Hide overflow content */
+}
+
+.current-word,
+.next-word {
+  margin-right: 20px;
+  font-size: 1.5rem; /* Set the desired font size */
+  color: rgb(240, 238, 242);
+  transition: opacity 0.5s ease; /* Add a transition for opacity change */
+  margin-left: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.next-word {
+  opacity: 0; /* Initially hide the next word */
+  transform: translateX(100%); /* Start next word off-screen to the right */
+}
+
+/* Stop animation on hover */
+.word-animation:hover .current-word,
+.word-animation:hover .next-word {
+  transition: none; /* Remove transition effect on hover */
+}

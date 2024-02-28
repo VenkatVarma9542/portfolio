@@ -1,0 +1,16 @@
+body {
+  background-color: #0a0115;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.navclass {
+  z-index: 2;
+}
+
+.section {
+  margin-top: 20px; /* Adjust spacing between sections */
+}
+.custom_curser {
+  cursor: url("./Accerts/Svg/naruto.svg"), auto;
+}
